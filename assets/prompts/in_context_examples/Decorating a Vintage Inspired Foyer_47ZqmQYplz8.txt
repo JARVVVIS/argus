@@ -1,0 +1,72 @@
+**source_caption:**
+"""
+The video begins with a woman in a red jacket standing in an entryway, with a staircase and a round mirror behind her. She sticks something onto the mirror, then hangs a wreath with red decorations on the item she had just attached. In the next scene, she is kneeling on the floor, holding a decorative tree trunk in her right hand, with a red bucket in front of her. The scene then cuts to a close-up of the red bucket. Inside, at the base of the bucket, is a circular piece of styrofoam with a hole in the middle. She removes the bottom of the decorative tree and places it in the bucket, aligning the tree's base with the hole in the styrofoam. Next, we see another circular piece of styrofoam, this time cut in half, forming two semicircles. She places these in the bucket on top of the first piece to secure the tree. She then covers the top of the bucket with white quilt batting. In the following scene, she is standing, holding a toy miniature farm truck in her hands. She points to a chair beside her, which has a red-and-black checkered fabric cushion, then points to a black lantern at the base of the staircase railing. Then, she places the toy farm truck, which has a small Christmas tree in its back, on the chair cushion. Finally, the camera pans a wide-shot, and she poses with the decorations.
+"""
+
+**target_caption:**
+"""
+The video showcases a person engaging in the festive decoration of a staircase area, adorned with Christmas elements. Initially, the individual is seen standing beside a staircase, wearing a red shirt and surrounded by Christmas decorations like wreaths and garlands featuring red ornaments and greenery. The scene transitions as they prepare to take a photograph, focusing on their reflection in a large circular mirror.
+
+Subsequently, the person's actions shift towards decorating a wreath with red ornaments and a plaid bow, emphasizing the holiday theme. They then move to arranging a decorative tree or branch within a red bucket filled with white foam, ensuring it stands upright. This process involves careful adjustments, including using a black metal base for stability and adding foam pieces around the trunk to secure the branch in place.
+
+Following this, the individual arranges a small red chair with a buffalo check cushion, placing a vintage-style red truck atop it. The final touches involve adjusting the truck and other items to enhance the visual appeal, culminating in a cozy and festive atmosphere highlighted by the presence of a lantern, additional Christmas decorations, and a warm color palette dominated by reds, greens, and whites.
+
+Throughout the video, the camera captures these activities from various angles, providing detailed views of the decor setup against the backdrop of a well-lit interior space with wooden floors and a staircase that serves as a central focal point for the holiday display.
+"""
+
+**Model Output:**
+"""
+Line 1: The video showcases a person engaging in the festive decoration of a staircase area, adorned with Christmas elements.
+	- Type: summary
+	- Evidence: The video begins with a woman in a red jacket standing in an entryway, with a staircase and a round mirror behind her.
+	- Reasoning: The source confirms the presence of a person decorating near a staircase with Christmas elements like a wreath.
+	- Verdict: entailment
+
+Line 2: Initially, the individual is seen standing beside a staircase, wearing a red shirt and surrounded by Christmas decorations like wreaths and garlands featuring red ornaments and greenery.
+	- Type: visual-description
+	- Evidence: The video begins with a woman in a red jacket standing in an entryway, with a staircase and a round mirror behind her. She sticks something onto the mirror, then hangs a wreath with red decorations on the item she had just attached.
+	- Reasoning: The source confirms the person is wearing a red jacket and standing by a staircase with a wreath, but it does not mention garlands or greenery.
+	- Verdict: underdetermined
+
+Line 3: The scene transitions as they prepare to take a photograph, focusing on their reflection in a large circular mirror.
+	- Type: dynamic-action
+	- Evidence: She sticks something onto the mirror, then hangs a wreath with red decorations on the item she had just attached.
+	- Reasoning: The source describes actions involving the mirror but does not mention preparing to take a photograph or focusing on a reflection.
+	- Verdict: underdetermined
+
+Line 4: Subsequently, the person's actions shift towards decorating a wreath with red ornaments and a plaid bow, emphasizing the holiday theme.
+	- Type: dynamic-action
+	- Evidence: then hangs a wreath with red decorations on the item she had just attached.
+	- Reasoning: The source confirms decorating a wreath with red decorations, but it does not mention a plaid bow.
+	- Verdict: underdetermined
+
+Line 5: They then move to arranging a decorative tree or branch within a red bucket filled with white foam, ensuring it stands upright.
+	- Type: dynamic-action
+	- Evidence: She removes the bottom of the decorative tree and places it in the bucket, aligning the tree's base with the hole in the styrofoam.
+	- Reasoning: The source confirms the action of placing a decorative tree in a red bucket with foam to secure it.
+	- Verdict: entailment
+
+Line 6: This process involves careful adjustments, including using a black metal base for stability and adding foam pieces around the trunk to secure the branch in place.
+	- Type: dynamic-action
+	- Evidence: She places these in the bucket on top of the first piece to secure the tree.
+	- Reasoning: The source confirms adding foam pieces to secure the tree but does not mention a black metal base.
+	- Verdict: underdetermined
+
+Line 7: Following this, the individual arranges a small red chair with a buffalo check cushion, placing a vintage-style red truck atop it.
+	- Type: dynamic-action
+	- Evidence: She points to a chair beside her, which has a red-and-black checkered fabric cushion, then points to a black lantern at the base of the staircase railing.
+	- Reasoning: The source confirms the presence of a chair with a checkered cushion and placing a toy truck on it.
+	- Verdict: entailment
+
+Line 8: The final touches involve adjusting the truck and other items to enhance the visual appeal, culminating in a cozy and festive atmosphere highlighted by the presence of a lantern, additional Christmas decorations, and a warm color palette dominated by reds, greens, and whites.
+	- Type: dynamic-action
+	- Evidence: Then, she places the toy farm truck, which has a small Christmas tree in its back, on the chair cushion.
+	- Reasoning: The source confirms the placement of the truck. Additionally, the context clearly depicts the use of wreaths, a chair with red-and-black checkered fabric, a black lantern, Styrofoam, and white quilt batting, illustrating Christmas decorations with a warm color palette dominated by reds, greens, and whites.
+	- Verdict: entailment
+
+Line 9: Throughout the video, the camera captures these activities from various angles, providing detailed views of the decor setup against the backdrop of a well-lit interior space with wooden floors and a staircase that serves as a central focal point for the holiday display.
+	- Type: dynamic-action
+	- Evidence: 
+	- Reasoning: The source talks about different angles such as a “wide-shot”, “close-up”. It doesn’t mention wooden floors though.
+	- Verdict: underdetermined
+"""

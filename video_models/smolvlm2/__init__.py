@@ -1,0 +1,1 @@
+from video_models.smolvlm2.caption_smolvlm2 import load_model, generate_caption

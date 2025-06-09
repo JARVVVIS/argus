@@ -1,0 +1,66 @@
+**source_caption:**
+"""
+A wooden cutting board holds already cut strawberries, kiwis, mangoes, along with raspberries, and blackberries. A person uses a knife to place strawberries into a bowl of yogurt with floral patterns. They use a spoon to add two scoops of mango, then use their hands to add three blackberries and two raspberries.
+"""
+
+**target_caption:**
+"""
+The video showcases the preparation of a fruit salad. It begins with a close-up view of a wooden cutting board, where an assortment of fresh fruits is neatly arranged and partially cut into pieces. The visible fruits include raspberries, blackberries, strawberries, and chunks of yellow mango or pineapple.
+
+As the video progresses, a hand enters the frame, reaching for the strawberries, which are then placed into a bowl containing white yogurt or cream. Subsequently, additional fruits such as blackberries and mango pieces are added to the mixture in the bowl, indicating the process of combining these ingredients to create a fruit salad.
+
+Throughout the video, there's no significant change in the camera angle or perspective; it remains fixed on the action taking place on the countertop. The focus stays consistently on the hands preparing the fruit salad, with all elements within the frame remaining static except for the deliberate placement of each fruit piece into the bowl.
+
+By the end of the video, the contents of the bowl have been filled with various colorful fruits, suggesting that the preparation of the fruit salad is nearing completion. The overall scene emphasizes the simplicity and freshness associated with making a healthy fruit salad at home.
+"""
+
+**Model Output:**
+"""
+Line 1: The video showcases the preparation of a fruit salad.
+	- Type: summary
+	- Evidence: A person uses a knife to place strawberries into a bowl of yogurt with floral patterns.
+	- Reasoning: The source describes the preparation of a dish involving fruits, which aligns with the concept of preparing a fruit salad.
+	- Verdict: entailment
+
+Line 2: It begins with a close-up view of a wooden cutting board, where an assortment of fresh fruits is neatly arranged and partially cut into pieces.
+	- Type: visual-description
+	- Evidence: A wooden cutting board holds already cut strawberries, kiwis, mangoes, along with raspberries, and blackberries.
+	- Reasoning: The source confirms the presence of a wooden cutting board with cut fruits, supporting the description of a close-up view of arranged fruits.
+	- Verdict: entailment
+
+Line 3: The visible fruits include raspberries, blackberries, strawberries, and chunks of yellow mango or pineapple.
+	- Type: visual-description
+	- Evidence: A wooden cutting board holds already cut strawberries, kiwis, mangoes, along with raspberries, and blackberries.
+	- Reasoning: The source confirms the presence of raspberries, blackberries, strawberries, and mangoes. The target mentions “pineapple” but only as it’s unsure whether the yellow chunks are “mango” or “pineapple”.
+	- Verdict: entailment
+
+Line 4: As the video progresses, a hand enters the frame, reaching for the strawberries, which are then placed into a bowl containing white yogurt or cream.
+	- Type: dynamic-action
+	- Evidence: A person uses a knife to place strawberries into a bowl of yogurt with floral patterns.
+	- Reasoning: The source confirms the action of placing strawberries into a bowl with yogurt, but using a knife and not directly reaching by the hand.
+	- Verdict: contradiction
+
+Line 5: Subsequently, additional fruits such as blackberries and mango pieces are added to the mixture in the bowl, indicating the process of combining these ingredients to create a fruit salad.
+	- Type: dynamic-action
+	- Evidence: They use a spoon to add two scoops of mango, then use their hands to add three blackberries and two raspberries.
+	- Reasoning: The source confirms the addition of blackberries and mango to the bowl, supporting the target's description of combining ingredients.
+	- Verdict: entailment
+
+Line 6: Throughout the video, there's no significant change in the camera angle or perspective; it remains fixed on the action taking place on the countertop.
+	- Type: visual-description
+	- Evidence: 
+	- Reasoning: Since the source doesn’t mention any changes in camera movement or focus, as per the instructions provided, we can a statement on consistent behavior / no change in the target as entailment
+	- Verdict: entailment
+
+Line 7: The focus stays consistently on the hands preparing the fruit salad, with all elements within the frame remaining static except for the deliberate placement of each fruit piece into the bowl.
+	- Type: visual-description
+	- Evidence: 
+	- Reasoning: Since the source doesn’t mention any changes focus or movement of fruits except the deliberate placements, as per the instructions provided, we can a statement on consistent behavior / no change in the target as entailment
+	- Verdict: entailment
+
+Line 8: By the end of the video, the contents of the bowl have been filled with various colorful fruits, suggesting that the preparation of the fruit salad is nearing completion.
+	- Type: dynamic-action
+	- Evidence: A person uses a knife to place strawberries into a bowl of yogurt with floral patterns. They use a spoon to add two scoops of mango, then use their hands to add three blackberries and two raspberries.
+	- Reasoning: The source describes the addition of various fruits to the bowl, supporting the idea that the fruit salad preparation is nearing completion.
+	- Verdict: entailment
+"""

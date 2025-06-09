@@ -1,0 +1,30 @@
+**source_caption:**
+"""
+The video shows a silhouette of a man from the chest up against a white background. The silhouette is filled with a cityscape in shades of dark grey and black, with lights from the buildings and cars visible. There is a body of water in the foreground reflecting the lights. The cityscape appears to be moving from left to right as different buildings and cars move as the video progresses.
+"""
+
+**target_caption:**
+"""
+The video showcases a silhouette of a person's profile, which is superimposed onto a cityscape at night. The skyline features illuminated buildings with lights reflecting off the water below, suggesting proximity to a river or waterfront. Throughout the sequence, there are no significant changes in the silhouette's position or the urban background, maintaining a consistent visual theme from start to finish.
+"""
+
+**Model Output:**
+"""
+Line 1: The video showcases a silhouette of a person's profile, which is superimposed onto a cityscape at night.
+	- Type: visual-description
+	- Evidence: The video shows a silhouette of a man from the chest up against a white background. The silhouette is filled with a cityscape in shades of dark grey and black, with lights from the buildings and cars visible.
+	- Reasoning: The source confirms the silhouette and cityscape, but it describes the silhouette as "from the chest up" which is consistent with "profile." The night setting is implied by the presence of lights but not explicitly stated.
+	- Verdict: entailment
+
+Line 2: The skyline features illuminated buildings with lights reflecting off the water below, suggesting proximity to a river or waterfront.
+	- Type: visual-description
+	- Evidence: The silhouette is filled with a cityscape in shades of dark grey and black, with lights from the buildings and cars visible. There is a body of water in the foreground reflecting the lights.
+	- Reasoning: The source confirms the presence of illuminated buildings and lights reflecting off the water, which suggests proximity to a waterfront.
+	- Verdict: entailment
+
+Line 3: Throughout the sequence, there are no significant changes in the silhouette's position or the urban background, maintaining a consistent visual theme from start to finish.
+	- Type: dynamic-action
+	- Evidence: The cityscape appears to be moving from left to right as different buildings and cars move as the video progresses.
+	- Reasoning: The source describes movement in the cityscape, which contradicts the claim of no significant changes in the urban background.
+	- Verdict: contradiction
+"""

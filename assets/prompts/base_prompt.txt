@@ -1,0 +1,45 @@
+You are given two inputs: a source_caption (serving as the premise) and a target_caption (serving as a series of hypothesis lines). For each line in the target_caption, evaluate its relationship to the source_caption according to the following guidelines:
+
+- **Entailment:**  The target line is fully supported by the source_caption. This includes cases where the target uses alternative phrasing or synonymous descriptions, and minor variations in attributes (for example, "pink" (or "red") and "reddish pink" are treated as equivalent). Additionally, If the target line asserts that an aspect (such as lighting, background consistency, or non-occurrence of an event) remained unchanged or did not happen, and the **source_caption** is silent on that aspect, treat it as entailment since if there were a change the **source_caption** would have mentioned it. Similarly, also include natural or highly probable attributes/states that would only be mentioned in the source if they deviated from the norm. For example: If there's mention of an airplane, we can assume it's large, as most airplanes naturally are. However, this only applies to immediately obvious and universally expected attributes. Any substantial elaboration or specific details beyond the most basic expectations should still be treated as underdetermined.
+
+- **Contradiction:**  The target line contains a direct conflict with the information in the source_caption. This means that the target asserts a fact or detail that explicitly opposes a fact stated in the source_caption (for example, attributing an action to Person-X in the source versus Person-Z in the target). 
+
+- **Underdetermined:**  The target line introduces additional details or makes occurrence or attribute claims that are semantically independent from the information provided in the source_caption. In these cases, the source_caption neither provides strong evidence to support the extra details nor directly contradicts them. This category also covers instances where coreference between events or entities is ambiguous—for example, when it is unclear whether a new event or entity mentioned in the target corresponds to one in the source. In such cases, because the evidence is insufficient to clearly support or refute the claim, the relationship should be classified as underdetermined.
+
+For each line in the **target_caption**, first output the information category, i.e., either it's a summary sentence (`summary`), or describing a static visual detail of the video like color of an entity (`visual-description`), or a dynamic action that includes events, attribute and relationship changes, etc (`dynamic-action`). Next output an evidence line or phrase from the **source_caption** that serves as the basis for your verdict. If no evidence exists, use an empty string. Then, provide reasoning for your verdict based on the evidence, followed by the final classification: "entailment," "contradiction," or "underdetermined." Do not include any additional commentary or summary.
+
+**Output Format:**  
+```
+Line {num}: {Line text}
+    - Type: {summary/visual-description/dynamic-action}
+    - Evidence: {quote a specific line/phrase from the source upon which to base your verdict; use an empty string if no evidence exists.}  
+    - Reasoning: {explanation for the verdict based on the evidence}  
+    - Verdict: {entailment/contradiction/underdetermined}  
+```
+
+**Final-Instructions:**
+
+1. Treat the **source_caption** as the premise and each line of the **target_caption** as a hypothesis.
+2. For each hypothesis line, decide if it is:
+   - **Entailment**: Completely supported by the source_caption.
+   - **Contradiction**: Contains information that directly conflicts and is unsupported by the source_caption.
+   - **Underdetermined**: Contains additional details or claims that the source_caption neither strongly supports nor directly contradicts. Mostly includes cases of ambiguous coreference between entities or events.
+3. Follow the output format exactly as specified, without any extra summaries or notes.
+
+---
+
+In-Context Examples:
+
+{IN_CONTEXT_EXAMPLES}
+
+---
+
+**source_caption:**
+"""
+{source_caption}
+"""
+
+**target_caption:**
+"""
+{target_caption}
+"""

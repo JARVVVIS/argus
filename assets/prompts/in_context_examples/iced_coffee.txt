@@ -1,0 +1,121 @@
+**source_caption:**
+"""
+The video shows a glass of iced coffee being made. A small white creamer is tilted over the glass, pouring a thin strip of cream into the coffee, with no hand holding the creamer, making it appear to float in midair. As the cream swirls and mixes with the coffee, a marble effect is created in the glass. There is a round ice ball on the wooden cutting board next to the glass, which is also on the board. Two wooden cutting boards are stacked, with a small round glass plate on top of the second board, where the glass rests, and the ice ball is directly on the cutting board. In the background, there is a gray wall, another glass with coffee, and a black coffee machine. The video seems like a boomerang, as the marble effect reverses, showing the forward and reverse actions twice, with increasing mixing between the creamer and coffee, then reversing towards the end.
+"""
+
+**target_caption:**
+"""
+The video shows a tall, clear glass of iced coffee being prepared. A small, white creamer is tilted over the glass, pouring a thin stream of cream into the coffee. The cream creates swirling patterns as it mixes with the dark coffee. A large, clear ice sphere sits on a wooden cutting board next to the glass. A small, clear glass containing a shot of espresso sits behind the iced coffee glass. A black espresso machine is visible in the background. The backdrop is a textured, gray wall. The lighting appears natural, possibly indicating daytime, and there are no discernible changes in the background elements across the frames.
+"""
+
+**Model Output:**
+"""
+Line 1: The video shows a tall, clear glass of iced coffee being prepared.
+    - Type: visual-description
+    - Evidence: "The video shows a glass of iced coffee being made."
+    - Reasoning: The basic claim of a glass of iced coffee is supported, but the added descriptors "tall" and "clear" are not mentioned in the source. Since, it’s not obvious that a glass would necessarily be clear and tall. these details underdetermined.
+    - Verdict: underdetermined
+
+Line 2: A small, white creamer is tilted over the glass, pouring a thin stream of cream into the coffee.
+    - Type: dynamic-action
+    - Evidence: "A small white creamer is tilted over the glass, pouring a thin strip of cream into the coffee"
+    - Reasoning: The source directly describes this same action with nearly identical wording.
+    - Verdict: entailment
+
+Line 3: The cream creates swirling patterns as it mixes with the dark coffee.
+    - Type: dynamic-action
+    - Evidence: "As the cream swirls and mixes with the coffee, a marble effect is created in the glass"
+    - Reasoning: Both describe the same mixing action, with "swirling patterns" being equivalent to "marble effect"
+    - Verdict: entailment
+
+Line 4: A large, clear ice sphere sits on a wooden cutting board next to the glass.
+    - Type: visual-description
+    - Evidence: "There is a round ice ball on the wooden cutting board next to the glass"
+    - Reasoning: Both describe the same ice sphere on the cutting board. "Large" and "clear" are additional details. Ice-balls are commonly clear (transparent), however, it’s size is undetermined from the source caption.
+    - Verdict: underdetermined
+
+Line 5: A small, clear glass containing a shot of espresso sits behind the iced coffee glass.
+    - Type: visual-description
+    - Evidence: "in the background, there is... another glass with coffee"
+    - Reasoning: While the source mentions another glass with coffee, it doesn't specify that it's a shot of espresso or describe its size and clarity.
+    - Verdict: underdetermined
+
+Line 6: A black espresso machine is visible in the background.
+    - Type: visual-description
+    - Evidence: "and a black coffee machine"
+    - Reasoning: The source confirms the presence of a black coffee machine in the background. "Espresso machine" is a reasonable specification of the type and is commonly used interchangeably with coffee machines.
+    - Verdict: entailment
+
+Line 7: The backdrop is a textured, gray wall.
+    - Type: visual-description
+    - Evidence: "In the background, there is a gray wall"
+    - Reasoning: The source confirms the gray wall. The additional detail of "textured" is compatible but not explicitly stated.
+    - Verdict: underdetermined
+
+Line 8: The lighting appears natural, possibly indicating daytime, and there are no discernible changes in the background elements across the frames.
+    - Type: visual-description
+    - Evidence: ""
+    - Reasoning: While background consistency is compatible with entailment, since source_caption also doesn’t mention any changes in the background, there is no evidence for specific lighting conditions or time of day.
+    - Verdict: underdetermined
+“””
+
+**source_caption:**
+"""
+The video begins with a rear view of a white airplane. We can see a bit of the logo, but it's hard to make out. The landing gear is down, indicating it's about to land. As the video progresses, the plane descends, with trees and a lot of greenery visible in the background. We also see the runway. The plane first touches down on its right tire, creating a bit of smoke, and then on its left tire, with smoke again.
+"""
+
+**target_caption:**
+"""
+The video shows a large, white passenger jet landing on a runway. The camera is positioned at the end of the runway, facing the approaching aircraft. Initially, the plane is high in the air, with its landing gear extended. As it descends, the ground and surrounding scenery become more visible. The runway is gray, and there's a grassy area and trees in the background. The plane touches down on the runway, and smoke or vapor is emitted from the tires as they make contact with the ground. The plane continues to move down the runway, gradually slowing down. The lighting appears natural, possibly indicating daytime, and there are no discernible changes in the background elements across the frames.
+"""
+
+**Model Output:**
+"""
+Line 1: The video shows a large, white passenger jet landing on a runway.
+    - Type: summary
+    - Evidence: "The video begins with a rear view of a white airplane"
+    - Reasoning: The source confirms it's a white airplane landing, most planes are large in size and used for passenger travels. Hence, this is compatible with the source caption.
+    - Verdict: entailment
+
+Line 2: The camera is positioned at the end of the runway, facing the approaching aircraft.
+    - Type: visual-description
+    - Evidence: "The video begins with a rear view of a white airplane"
+    - Reasoning: The source mentions a rear view, which contradicts the camera being positioned to face the approaching aircraft.
+    - Verdict: contradiction
+
+Line 3: Initially, the plane is high in the air, with its landing gear extended.
+    - Type: visual-description
+    - Evidence: "The landing gear is down, indicating it's about to land"
+    - Reasoning: The source explicitly states the landing gear is down before landing.
+    - Verdict: entailment
+
+Line 4: As it descends, the ground and surrounding scenery become more visible.
+    - Type: dynamic-action
+    - Evidence: "As the video progresses, the plane descends, with trees and a lot of greenery visible in the background"
+    - Reasoning: Both describe the same descent with increasing visibility of surroundings.
+    - Verdict: entailment
+
+Line 5: The runway is gray, and there's a grassy area and trees in the background.
+    - Type: visual-description
+    - Evidence: "trees and a lot of greenery visible in the background. We also see the runway"
+    - Reasoning: While the source confirms trees, greenery, and runway, runway color is very commonly gray, hence it’s compatible with the source caption.
+    - Verdict: entailment
+
+Line 6: The plane touches down on the runway, and smoke or vapor is emitted from the tires as they make contact with the ground.
+    - Type: dynamic-action
+    - Evidence: "The plane first touches down on its right tire, creating a bit of smoke, and then on its left tire, with smoke again"
+    - Reasoning: Both describe the touchdown with smoke, though the source provides more specific detail about the sequence.
+    - Verdict: entailment
+
+Line 7: The plane continues to move down the runway, gradually slowing down.
+    - Type: dynamic-action
+    - Evidence: ""
+    - Reasoning: The source doesn't mention anything about the plane's movement after touchdown or its deceleration.
+    - Verdict: underdetermined
+
+Line 8: The lighting appears natural, possibly indicating daytime, and there are no discernible changes in the background elements across the frames.
+    - Type: visual-description
+    - Evidence: ""
+    - Reasoning: While background consistency is compatible with entailment, since source_caption also doesn’t mention any changes in the background, the source doesn't mention lighting conditions or time of day.
+    - Verdict: underdetermined
+“””

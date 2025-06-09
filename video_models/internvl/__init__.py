@@ -1,0 +1,1 @@
+from video_models.internvl.caption_internvl import load_model, generate_caption

@@ -1,0 +1,1 @@
+from video_models.mini_cpm.caption_minicpm import generate_caption, load_model

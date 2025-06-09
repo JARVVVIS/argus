@@ -1,0 +1,48 @@
+**source_caption:**
+"""
+The video opens with a close-up of a branch displaying a brown stem, green leaves, and a pinkish-red flower bud set against a blue background. As the video progresses, the bud gradually opens, revealing its vivid pinkish-red petals. Eventually, the petals fully unfurl, bringing the flower to full bloom, with visible stamens and pistil adding to the intricate view. After a brief black screen, the flower is shown wrapping its petals again, returning to the subdued bud stage seen at the beginning, symbolizing the cycle of life and growth in nature.
+"""
+
+**target_caption:**
+"""
+The video showcases the blooming process of a flower against a consistent, vibrant blue background. Initially, we see a closed bud with a mix of green and reddish hues among several dark green leaves on a branch. As the video progresses, the bud begins to open, revealing more of its inner red coloration. The transformation continues until the flower reaches full bloom, displaying bright red petals that contrast vividly with the surrounding foliage and backdrop. Throughout this sequence, there is no discernible camera movement; the focus remains sharp and steady on the unfolding beauty of the flower. Eventually, the video returns to the initial state, showing the bud again in its closed form, suggesting either a pause or a reversal in time.
+"""
+
+**Model Output:**
+"""
+Line 1: The video showcases the blooming process of a flower against a consistent, vibrant blue background.
+	- Type: summary
+	- Evidence: The video opens with a close-up of a branch displaying a brown stem, green leaves, and a pinkish-red flower bud set against a blue background.
+	- Reasoning: The source confirms the blooming process and the blue background, which is described as consistent in the target.
+	- Verdict: entailment
+
+Line 2: Initially, we see a closed bud with a mix of green and reddish hues among several dark green leaves on a branch.
+	- Type: visual-description
+	- Evidence: The video opens with a close-up of a branch displaying a brown stem, green leaves, and a pinkish-red flower bud set against a blue background.
+	- Reasoning: The source confirms the presence of a pinkish-red flower bud and green leaves. Note: ‘dark green’ leaves and ‘reddish hues’ are highly probable attribute variations in this context.
+	- Verdict: entailment
+
+Line 3: As the video progresses, the bud begins to open, revealing more of its inner red coloration.
+	- Type: dynamic-action
+	- Evidence: As the video progresses, the bud gradually opens, revealing its vivid pinkish-red petals.
+	- Reasoning: The source describes the bud opening and revealing pinkish-red petals, which aligns with the target's description of revealing more red coloration.
+	- Verdict: entailment
+
+Line 4: The transformation continues until the flower reaches full bloom, displaying bright red petals that contrast vividly with the surrounding foliage and backdrop.
+	- Type: dynamic-action
+	- Evidence: Eventually, the petals fully unfurl, bringing the flower to full bloom, with visible stamens and pistil adding to the intricate view.
+	- Reasoning: The source confirms the flower reaching full bloom with vivid pinkish-red petals. The source also mentioned that there is a blue background in the starting line. Hence, ‘vivid contrast’ is a highly probable interpretation in this setting.
+	- Verdict: entailment
+
+Line 5: Throughout this sequence, there is no discernible camera movement; the focus remains sharp and steady on the unfolding beauty of the flower.
+	- Type: visual-description
+	- Evidence: 
+	- Reasoning: Since the source doesn’t mention any changes in camera movement or focus, as per the instructions provided, we can a statement on consistent behavior / no change in the target as entailment
+	- Verdict: entailment
+
+Line 6: Eventually, the video returns to the initial state, showing the bud again in its closed form, suggesting either a pause or a reversal in time.
+	- Type: dynamic-action
+	- Evidence: After a brief black screen, the flower is shown wrapping its petals again, returning to the subdued bud stage seen at the beginning, symbolizing the cycle of life and growth in nature.
+	- Reasoning: The source confirms the return to the initial bud state, aligning with the target's description of a reversal or pause.
+	- Verdict: entailment
+"""

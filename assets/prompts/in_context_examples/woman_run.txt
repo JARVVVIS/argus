@@ -1,0 +1,78 @@
+**source_caption:**
+"""
+The video takes place outdoors during the daytime, as sunlight is visible. It features a woman dressed in a black long-sleeve top or jacket (the close-up angle makes it difficult to determine) and black leggings with a splatter pattern. She wears a fitness tracker (or smartwatch) on her right wrist and has earbuds in her ears. Her hair is pulled back into a ponytail.
+
+Standing on a brick pathway (that is arranged in a circular pattern), she raises her right arm, revealing the word "GO" on the fitness tracker's screen. Using her left index finger, she double-taps the screen, which then transitions to a block of unreadable text. She taps again, triggering a countdown from three. When the countdown ends, she starts jogging away from the camera.
+
+The camera remains fixed, capturing her back and legs as she moves until she exits the frame, leaving only her shadow visible. The focus then remains on the brick pathway, as the video concludes.
+"""
+
+**target_caption:**
+"""
+The video depicts a person in an outdoor setting, focusing on their interactions with a smartwatch. Initially, the camera captures a close-up of the individual's upper body and hands, showcasing them wearing a dark-colored jacket. The person is seen touching or interacting with their watch, suggesting they are adjusting settings or viewing information on it.
+
+As the video progresses, the individual continues to engage with the smartwatch, displaying various digital numbers on its screen, which could indicate steps taken, distance covered, or other fitness-related metrics. These actions imply that the person might be monitoring their physical activity or performance.
+
+Subsequently, the perspective shifts to show more of the person's lower body, revealing black leggings and white shoes, indicating movement as if walking or running. This shift suggests that the person has transitioned from standing still to engaging in some form of exercise or casual walk.
+
+In the final frame, the focus moves away from the person entirely, centering instead on the cobblestone pathway where they were previously visible. This change emphasizes the environment, highlighting the textured surface of the pavement and providing context for the setting without showing the individual's current activity.
+
+Overall, the video sequence illustrates a moment captured in time, transitioning from a detailed view of a person interacting with technology to a broader environmental focus, hinting at an active lifestyle while maintaining a sense of continuity through consistent attire and surroundings.
+"""
+
+**Model Output:**
+"""
+Line 1: The video depicts a person in an outdoor setting, focusing on their interactions with a smartwatch.
+	- Type: summary
+	- Evidence: She wears a fitness tracker (or smartwatch) on her right wrist and has earbuds in her ears.
+	- Reasoning: The source confirms the presence of a person outdoors interacting with a fitness tracker, which is synonymous with a smartwatch.
+	- Verdict: entailment
+
+Line 2: Initially, the camera captures a close-up of the individual's upper body and hands, showcasing them wearing a dark-colored jacket.
+	- Type: visual-description
+	- Evidence: It features a woman dressed in a black long-sleeve top or jacket (the close-up angle makes it difficult to determine) and black leggings with a splatter pattern.
+	- Reasoning: The source does mention that it could be a black jacket.
+	- Verdict: entailment
+
+Line 3: The person is seen touching or interacting with their watch, suggesting they are adjusting settings or viewing information on it.
+	- Type: dynamic-action
+	- Evidence: Using her left index finger, she double-taps the screen
+	- Reasoning: The source confirms the action of interacting with the fitness tracker, which aligns with adjusting settings or viewing information.
+	- Verdict: entailment
+
+Line 4: As the video progresses, the individual continues to engage with the smartwatch, displaying various digital numbers on its screen, which could indicate steps taken, distance covered, or other fitness-related metrics.
+	- Type: dynamic-action
+	- Evidence: 
+	- Reasoning: The source mentions the woman tapping the screen of her fitness tracker, and a countdown from three appearing. This confirms the presence of “digital numbers on its screen”, but isn’t a “fitness-related metric”.
+	- Verdict: contradiction
+
+Line 5: These actions imply that the person might be monitoring their physical activity or performance.
+	- Type: dynamic-action
+	- Evidence: She taps again, triggering a countdown from three.
+	- Reasoning: The source describes a countdown, which could imply preparation for physical activity, supporting the idea of monitoring performance.
+	- Verdict: entailment
+
+Line 6: Subsequently, the perspective shifts to show more of the person's lower body, revealing black leggings and white shoes, indicating movement as if walking or running.
+	- Type: dynamic-action
+	- Evidence: When the countdown ends, she starts jogging away from the camera.
+	- Reasoning: The source confirms the person is wearing black leggings and begins jogging, but it does not mention white shoes.
+	- Verdict: underdetermined
+
+Line 7: In the final frame, the focus moves away from the person entirely, centering instead on the cobblestone pathway where they were previously visible.
+	- Type: visual-description
+	- Evidence: The focus then remains on the brick pathway, as the video concludes.
+	- Reasoning: The source confirms the camera focuses on the brick pathway, not a cobblestone pathway.
+	- Verdict: contradiction
+
+Line 8: This change emphasizes the environment, highlighting the textured surface of the pavement and providing context for the setting without showing the individual's current activity.
+	- Type: visual-description
+	- Evidence: The focus then remains on the brick pathway, as the video concludes.
+	- Reasoning: The source confirms the focus on the pathway, which emphasizes the environment, and it is common to assume brick pathways would have a texture.
+	- Verdict: entailment
+
+Line 9: Overall, the video sequence illustrates a moment captured in time, transitioning from a detailed view of a person interacting with technology to a broader environmental focus, hinting at an active lifestyle while maintaining a sense of continuity through consistent attire and surroundings.
+	- Type: summary
+	- Evidence: Using her left index finger, she double-taps the screen, which then transitions to a block of unreadable text. She taps again, triggering a countdown from three. When the countdown ends, she starts jogging away from the camera.
+	- Reasoning: The source supports the transition from interaction with technology to jogging, indicating an active lifestyle and consistent surroundings.
+	- Verdict: entailment
+"""

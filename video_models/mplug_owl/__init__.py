@@ -1,0 +1,1 @@
+from video_models.mplug_owl.caption_mplug_owl import generate_caption, load_model
